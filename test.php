@@ -2,10 +2,19 @@
 	require "User.php";
 	$user=new User();
 	// $courses=$user->courses(1);
-	// print_r($courses);
 	// foreach($courses as $val){
 	// 	echo $val["name"]."<br>";
 	// }
-	$user->create_user(1,"tryyjhtgj","dsgfdgfdsg","erqwreqwpp123$");
-	//print_r($create);
+	//$response=$user->create_user(1,"babinasdasdas","babinasdasdas","babinasdasdas$");
+	//print_r($response);
+	//echo $response["id"];
+
+	//$response=$user->update_user(9,"anand");
+	//print_r($response);
+	//echo $response["id"];
+
+	$response=$user->delete_user(1,9);
+	print_r($response);
+	echo $response["id"];
+
 ?>
