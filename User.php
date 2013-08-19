@@ -19,9 +19,6 @@ class User extends Canvas{
 	public function delete_user($account_id,$id){
 		return $this->delete_json("/accounts/".$account_id."/users/".$id);
 	}
-	public function get_course($id){
-		return $this->getcourse_json("/courses/".$id);
-	}
 }
 
 ?>
