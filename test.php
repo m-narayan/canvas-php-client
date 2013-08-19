@@ -7,7 +7,7 @@
 	//$response=$course->get_course(1);
 	//print_r($response);
 
-	$response=$course->create_course(1,"ruby","ruby","ruby");
+	$response=$course->modules(2);
 	print_r($response);
 	//echo $response["id"];
 
