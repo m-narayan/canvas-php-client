@@ -7,9 +7,9 @@
 	//$response=$course->get_course(1);
 	//print_r($response);
 
-	$response=$course->create_course(1,"hhhhhh","hhhhhhhhh22","hhhhhhhhh3$");
+	$response=$course->create_course(1,"hhhhhh11","hhhhhhhhh212","hhhhhhhhh31$");
 	print_r($response);
-	//echo $response["id"];
+	echo $response["id"];
 
 	// $courses=$user->courses(1);
 	// foreach($courses as $val){
