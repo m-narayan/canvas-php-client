@@ -13,8 +13,11 @@
 	//print_r($response);
 	//echo $response["id"];
 
-	$response=$user->delete_user(1,9);
-	print_r($response);
-	echo $response["id"];
+	//$response=$user->delete_user(1,9);
+	//print_r($response);
+	//echo $response["id"];
+
+	//$courses=$user->get_course(2);
+	//print_r($courses);
 
 ?>

@@ -66,6 +66,16 @@ class Canvas{
         curl_close($handle);
         return $response;
 	}
+	public function getcourse_json($url){
+		$handle = curl_init();
+		curl_setopt($handle, CURLOPT_URL, $this->api_root_url.$url."?access_token=".$this->oauth_token);
+		curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);
+		curl_setopt($handle, CURLOPT_SSL_VERIFYHOST, false);
+		curl_setopt($handle, CURLOPT_SSL_VERIFYPEER, false);
+		$response= json_decode(curl_exec($handle),TRUE);
+		curl_close($handle);
+		return $response;
+	}
 
 }
 ?>
