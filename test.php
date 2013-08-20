@@ -2,13 +2,18 @@
 	require "User.php";
 	require "course.php";
 	$user=new User();
-	$course=new Course();
+	//$course=new Course();
 	//print_r($course);
-	//$response=$course->get_course(1);
-	//print_r($response);
+	$response=$user->delete_user(1,10);
+	echo $response->name;
+	echo $response->id;
+	// foreach($response as $item)
+	// {
+	// 	echo $item->name."<br>";
+	// }
 
-	$response=$course->modules(2);
-	print_r($response);
+	//$response=$course->modules(2);
+	//print_r($response);
 
 
 	//$response=$course->create_course(1,"ruby","ruby","ruby");
