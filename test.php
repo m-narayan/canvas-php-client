@@ -1,12 +1,13 @@
 <?php
 	require "User.php";
 	require "course.php";
-	$user=new User();
-	//$course=new Course();
+	//$user=new User();
+	$course=new Course();
 	//print_r($course);
-	$response=$user->delete_user(1,10);
-	echo $response->name;
-	echo $response->id;
+	$response=$course->modules(2);
+	var_dump($response);
+	//echo $response->name;
+//echo $response->id;
 	// foreach($response as $item)
 	// {
 	// 	echo $item->name."<br>";
@@ -16,7 +17,7 @@
 	//print_r($response);
 
 
-	//$response=$course->create_course(1,"ruby","ruby","ruby");
+	
 	//print_r($response);
 	//echo $response["id"];
 
